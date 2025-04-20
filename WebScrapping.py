@@ -17,7 +17,7 @@ driver = webdriver.Edge(service=service, options=edge_options)
 caminho = "https://www.amazon.com.br/s?k=monitor+27+polegadas&crid=2BXGDPJX7837C&sprefix=mON%2Caps%2C342&ref=nb_sb_ss_ts-doa-p_4_3"
 
 driver.get(caminho)
-elem = driver.find_element(By.CSS_SELECTOR, "h2")
+elem = driver.find_element(By.CSS_SELECTOR, "h3")
 print(elem)
 
 driver.quit()
